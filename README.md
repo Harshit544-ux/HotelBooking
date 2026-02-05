@@ -1,5 +1,3 @@
-# Hotel---Booking---App
-
 # 🏨 Hotel Booking App
 
 A modern and responsive **Hotel Booking Application** built with **React.js**, featuring secure authentication using **Clerk**.  
