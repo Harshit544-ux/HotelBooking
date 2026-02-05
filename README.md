@@ -1,6 +1,5 @@
 # Hotel---Booking---App
 
-
 # 🏨 Hotel Booking App
 
 A modern and responsive **Hotel Booking Application** built with **React.js**, featuring secure authentication using **Clerk**.  
@@ -122,26 +121,6 @@ GitHub: Harshit544-ux
 
 ---
 
-### ✅ Ye README:
-- Resume-friendly  
-- Recruiter / interviewer ready  
-- Open-source standard follow karta hai  
-
-Agar chaho to main:
-- **backend add karke README update**
-- **deployment (Vercel / Netlify) section**
-- ya **screenshots section**
-
-bhi add kar dunga 🔥
-
-You said:
-ache se ek saatah do smajhe tum create readme file
-
-ChatGPT said:
-Samajh gaya 👍
-Tumhe ek hi jagah, proper professional README.md chahiye — koi explanation nahi, bas ready-to-use file.
-Neeche final README.md hai 👇
-👉 Direct copy–paste karo aur README.md me save kar do.
 
 # 🏨 Hotel Booking App
 
@@ -254,7 +233,6 @@ SignedOut
 
 🧑‍💼 Admin dashboard
 
-🌐 Backend integration (Node.js / Express / Database)
 
 🤝 Contributing
 Contributions are welcome.
