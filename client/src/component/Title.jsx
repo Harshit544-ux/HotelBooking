@@ -2,8 +2,14 @@ import React from 'react'
 
 function Title({ title, subTitle, align = "center", font }) {
 
+  const alignmentClasses = {
+    left: "md:items-start md:text-left",
+    center: "items-center text-center",
+    right: "md:items-end md:text-right"
+  }
+
   return (
-    <div className={`flex flex-col justify-center ${align === "left" && "md:items-start md:text-left"}`}>
+    <div className={`flex flex-col justify-center ${alignmentClasses[align]}`}>
       <h1 className={`text-4xl md:text-[40px] ${font || "font-open-sans"}`}>
         {title}
       </h1>

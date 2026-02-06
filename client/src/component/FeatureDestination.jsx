@@ -9,7 +9,7 @@ function FeatureDestination() {
   return (
     <div className='flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 py-20'>
 
-      <Title  title='Featured Destination' subTitle="Discover over handpicked selection of exceptional
+      <Title align='center' title='Featured Destination' subTitle="Discover over handpicked selection of exceptional
       properties around the world ,offering unparalleled luxury and unforgettable experience"/>
 
         {/* HotelCard */}
