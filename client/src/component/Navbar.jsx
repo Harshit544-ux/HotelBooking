@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
+import { useClerk, useUser } from "@clerk/clerk-react";
 
 const Navbar = () => {
     const navLinks = [
@@ -12,6 +13,9 @@ const Navbar = () => {
 
     const [isScrolled, setIsScrolled] = React.useState(false);
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+    const {openSignIn} =useClerk();
+    const {user} = useUser();
 
     // Scroll Effect
     React.useEffect(() => {
@@ -84,7 +88,7 @@ const Navbar = () => {
                     <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
 
-                <button
+                <button  onClick={openSignIn}
                     className={` px-8 py-2.5 rounded-full ml-4 transition ${isScrolled ? "text-white bg-black" : "bg-white text-black"
                         }`}
                 >
@@ -126,7 +130,7 @@ const Navbar = () => {
                     Dashboard
                 </button>
 
-                <button className="bg-black text-white px-8 py-2.5 rounded-full">
+                <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full">
                     Login
                 </button>
             </div>
