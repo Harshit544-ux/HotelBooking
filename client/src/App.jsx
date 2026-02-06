@@ -1,9 +1,7 @@
 import './App.css'
-import FeatureDestination from './component/FeatureDestination';
-import Hero from './component/Hero';
 import Navbar from './component/Navbar'
 import { Routes, useLocation ,Route} from 'react-router-dom'
-
+import Home from './pages/Home';
 
 
 function App() {
@@ -17,7 +15,7 @@ function App() {
       <div className='min-h-[70vh]'>
      
         <Routes>
-          <Route path='/' element={<><Hero /><FeatureDestination/></>} />
+          <Route path='/' element={<Home/>} />
 
         </Routes>
 
