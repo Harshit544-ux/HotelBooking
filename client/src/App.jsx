@@ -3,6 +3,7 @@ import Navbar from './component/Navbar'
 import { Routes, useLocation ,Route} from 'react-router-dom'
 import Home from './pages/Home';
 import Footer from './component/Footer';
+import AllRooms from './pages/AllRooms';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <div className='min-h-[70vh]'>
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/rooms' element={<AllRooms/>} />
         </Routes>
       </div>
 
