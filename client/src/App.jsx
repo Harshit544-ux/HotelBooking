@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './component/Navbar'
 import { Routes, useLocation ,Route} from 'react-router-dom'
 import Home from './pages/Home';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -10,17 +11,18 @@ function App() {
 
   return (
     <div>
+      {/* navbar */}
       {!isOwnerPath && <Navbar />}
-   
+    
+     {/*  main content page */}
       <div className='min-h-[70vh]'>
-     
         <Routes>
           <Route path='/' element={<Home/>} />
-
         </Routes>
-
-        
       </div>
+
+      {/* footer */}
+    <Footer/>
 
     </div>
   )
