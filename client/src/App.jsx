@@ -5,9 +5,7 @@ import Home from './pages/Home';
 import Footer from './component/Footer';
 import AllRooms from './pages/AllRooms';
 
-
 function App() {
-
   const isOwnerPath = useLocation().pathname.includes('owner');
 
   return (
@@ -24,7 +22,7 @@ function App() {
       </div>
 
       {/* footer */}
-    <Footer/>
+        <Footer/>
 
     </div>
   )

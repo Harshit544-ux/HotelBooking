@@ -13,8 +13,7 @@ function Home() {
     <ExclusiveOffers/>
     <Testimonial/>
     <NewsLetter/>
-    </>
-    
+    </>   
   )
 }
 

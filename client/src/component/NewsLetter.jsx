@@ -1,8 +1,6 @@
 import React from 'react'
 import Title from './Title'
 
-
-
 function NewsLetter() {
     return (
         <div className='flex flex-col items-center max-w-5xl rounded-2xl py-12 md:py-16 
@@ -21,7 +19,5 @@ function NewsLetter() {
 
     )
 }
-
-
 
 export default NewsLetter

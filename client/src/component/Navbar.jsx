@@ -27,8 +27,6 @@ const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    console.log(user);
-
     // Scroll Effect - FIXED
     useEffect(() => {
         const handleScroll = () => {

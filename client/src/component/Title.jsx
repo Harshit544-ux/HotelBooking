@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Title({ title, subTitle, align = "center", font }) {
-
+  
   const alignmentClasses = {
     left: "md:items-start md:text-left",
     center: "items-center text-center",

@@ -6,7 +6,7 @@ function StarRating({rating=4}) {
         <div className='flex'>
             {Array(5).fill(0).map((_, index) => (
               <img src={rating > index ? assets.starIconFilled : assets.starIconOutlined}
-              alt='star-icon'/>
+               alt='star-icon'/>
             ))}
         </div>
     )

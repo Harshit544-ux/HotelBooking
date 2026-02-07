@@ -47,5 +47,4 @@ function ExclusiveOffers() {
     )
 }
 
-
 export default ExclusiveOffers;
