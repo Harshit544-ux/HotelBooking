@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { assets, facilityIcons, roomsDummyData } from "../assets/assets";
+import { assets, facilityIcons, roomCommonData, roomsDummyData } from "../assets/assets";
 import StarRating from "../component/StarRating";
 
 function RoomDetails() {
@@ -115,8 +115,32 @@ function RoomDetails() {
                   Check Availability
                 </button>
 
-
             </form>
+          
+          {/*Common Specification */}
+        <div className="mt-25 space-y-4">
+            {roomCommonData.map((spec, index) => (
+                <div key={index} className="flex items-center gap-2">
+                <img
+                    src={spec.icon}
+                    alt={`${spec.title}-icon`}
+                    className="w-6.5"
+                />
+                <div>
+                    <p className="text-base">{spec.title}</p>
+                    <p className="text-gray-500">{spec.description}</p>
+                </div>
+                </div>
+            ))}
+        </div>
+
+
+       <div className="max-w-3xl border-y border-gray-300 my-15 py-10 text-gray-500">
+        <p>Guests will be allocated rooms subject to availability upon arrival.
+         Management reserves the right to assign an alternative room of similar category if required.
+         Additional guests beyond the confirmed booking may be charged extra.
+         All guests must comply with hotel policies during their stay.</p>
+       </div>
 
 
         </div>
