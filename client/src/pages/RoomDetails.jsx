@@ -142,6 +142,19 @@ function RoomDetails() {
          All guests must comply with hotel policies during their stay.</p>
        </div>
 
+        {/* Hosted by */}
+        <div className="flex flex-col items-start gap-4">
+            <div>
+                <p className="text-lg md:text-xl">Hosted by {room.hotel.name}</p>
+                <div className="flex items-center mt-1">
+                    <StarRating/>
+                    <p className="ml-2">200+ reviews</p>
+                </div>
+            </div>
+            <button className="px-6 py-2.5 mt-4 rounded text-white bg-blue-600  
+            hover:bg-primary-dull transition-all cursor-pointer">Contact Now</button>
+        </div>
+
 
         </div>
     );
