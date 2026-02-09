@@ -69,29 +69,24 @@ function MyBookings() {
                             </div>
                         </div>
 
-
                         <div className="flex flex-col md:flex-row md:items-center gap-8 mt-3">
 
-{/* Check-in */}
-<div className="flex flex-col gap-1">
-  <p className="text-sm font-medium">Check-in</p>
-  <p className="text-gray-500 text-sm">
-    {new Date(book.checkInDate).toLocaleDateString()}
-  </p>
-</div>
+                            {/* Check-in */}
+                            <div className="flex flex-col gap-1">
+                                <p className="text-sm font-medium">Check-in</p>
+                                <p className="text-gray-500 text-sm">
+                                    {new Date(book.checkInDate).toLocaleDateString()}
+                                </p>
+                            </div>
 
-{/* Check-out */}
-<div className="flex flex-col gap-1">
-  <p className="text-sm font-medium">Check-out</p>
-  <p className="text-gray-500 text-sm">
-    {new Date(book.checkOutDate).toLocaleDateString()}
-  </p>
-</div>
-
-
-</div>
-
-
+                            {/* Check-out */}
+                            <div className="flex flex-col gap-1">
+                                <p className="text-sm font-medium">Check-out</p>
+                                <p className="text-gray-500 text-sm">
+                                    {new Date(book.checkOutDate).toLocaleDateString()}
+                                </p>
+                            </div>
+                        </div>
 
                         {/* Payment Status */}
                         <div className="flex flex-col items-start justify-center pt-3">
@@ -116,7 +111,6 @@ function MyBookings() {
 
                     </div>
                 ))}
-
 
             </div>
         </div>
