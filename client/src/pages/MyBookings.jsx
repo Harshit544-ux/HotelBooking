@@ -98,7 +98,7 @@ function MyBookings() {
                                         }`}
                                 />
 
-                                {/* Status Text */}
+                                {/* Paymen Status */}
                                 <p
                                     className={`text-sm font-medium ${book.isPaid ? "text-green-600" : "text-red-600"
                                         }`}
@@ -107,6 +107,12 @@ function MyBookings() {
                                 </p>
 
                             </div>
+                            {!book.isPaid && (
+                                <button className="px-4 py-1.5 mt-4 text-xs border border-gray-400 rounded-full 
+                                 hover:bg-gray-50 transition-all cursor-pointer">
+                                    Pay Now
+                                </button>
+                            )}
                         </div>
 
                     </div>
