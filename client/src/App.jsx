@@ -15,7 +15,7 @@ function App() {
     <div>
       {/* navbar */}
       {!isOwnerPath && <Navbar />}
-      <HotelReg/>
+      {false && <HotelReg/>}
      {/*  main content page */}
       <div className='min-h-[70vh]'>
         <Routes>
