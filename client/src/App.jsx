@@ -36,8 +36,8 @@ function App() {
         </Routes>
       </div>
  
-      {/* footer */}
-        <Footer/>
+       {/* Footer */}
+       {!isOwnerPath && <Footer />}
 
     </div>
   )
