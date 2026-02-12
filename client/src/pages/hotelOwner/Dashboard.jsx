@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [dashboardData] = useState(dashboardDummyData)
 
   return (
-    <div className="p-6 max-w-7xl">
+    <div className="p-1.8 max-w-7xl">
      
       {/* Page Title */}
       <Title 
