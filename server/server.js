@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
 const connectDB = require("./configs/db");
+const { clerkMiddleware } = require("@clerk/express");
 
 //initialize the app
 const app = express() ;
@@ -9,6 +10,7 @@ const app = express() ;
 // Middlewares
 app.use(cors()) //Enable cross-origin resource sharing
 app.use(express.json()); //  important for req.body
+app.use(clerkMiddleware())
 
 // DB Connection
 connectDB();
